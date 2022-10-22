@@ -1,4 +1,4 @@
-﻿using LocalLogic;
+using LocalLogic;
 
 
 int[] arrFirst = { 1, 3, 5, 3, 4, 9 };
@@ -10,7 +10,7 @@ GlobalLogic.GlobalClass.PrintArray(arrFirst);
 Console.Write("Второй массив: ");
 GlobalLogic.GlobalClass.PrintArray(arrSecond);
 
-if (LocalLogic.LocalClass.ComparisonArray(arrFirst, arrSecond))
+if (LocalLogic.LocalClass.ArrayIsComparison(arrFirst, arrSecond))
 {
     Console.Write($"Массивы равны");
 }
