@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 
 namespace LocalLogic
 {
     public class LocalClass
     {
-        public static int GetSum(int[] arr)
+        public static int GetPositiveSumFromArray(int[] arr)
         {
             int sum = 0;
             for (int i = 0; i < arr.Length; i++)
