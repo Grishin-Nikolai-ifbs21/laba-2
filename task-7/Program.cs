@@ -1,4 +1,4 @@
-﻿using LocalLogic;
+using LocalLogic;
 using GlobalLogic;
 
 int sizeArray = 0;
@@ -17,7 +17,7 @@ arr = GlobalLogic.GlobalClass.FillingArray(arr, -100, 100);
 Console.Write("Массив: ");
 GlobalLogic.GlobalClass.PrintArray(arr);
 
-arr = LocalLogic.LocalClass.SortArray(arr);
+arr = LocalLogic.LocalClass.ArraySortDescending(arr);
 
 Console.Write("Массив после сортировки по убыванию: ");
 GlobalLogic.GlobalClass.PrintArray(arr);
