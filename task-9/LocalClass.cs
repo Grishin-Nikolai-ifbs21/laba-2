@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using GlobalLogic;
 
 namespace LocalLogic
 {
     public class LocalClass
     {
-        public static bool ComparisonArray(int[] arrFirst, int[] arrSecond)
+        public static bool ArrayIsComparison(int[] arrFirst, int[] arrSecond)
         {
             Array.Sort(arrFirst);
             Array.Sort(arrSecond);
@@ -20,6 +20,7 @@ namespace LocalLogic
                     }
                 }
             }
+
             else
             {
                 return false;
@@ -29,4 +30,3 @@ namespace LocalLogic
         }
     }
 }
-
