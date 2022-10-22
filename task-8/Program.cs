@@ -1,4 +1,4 @@
-﻿using LocalLogic;
+using LocalLogic;
 using GlobalLogic;
 
 int sizeArray = 0;
@@ -27,6 +27,11 @@ Console.Write("Массив: ");
 GlobalLogic.GlobalClass.PrintArray(arr);
 Console.Write('\n');
 
-LocalLogic.LocalClass.PrintIndex(arr, find_value);
+int[] arrFindIndex = LocalLogic.LocalClass.GetIndexIfFind(arr, find_value);
+
+for (int i = 0; i < arrFindIndex.Length; i++)
+{
+    Console.WriteLine($"Найдено совпаденик с индексом {arrFindIndex[i]}");
+}
 
 Console.ReadLine();
