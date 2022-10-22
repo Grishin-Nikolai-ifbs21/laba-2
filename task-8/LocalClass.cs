@@ -1,18 +1,32 @@
-﻿using System;
+using System;
 
 namespace LocalLogic
 {
     public class LocalClass
     {
-        public static void PrintIndex(int[] arr, int value)
+        public static int[] GetIndexIfFind(int[] arr, int value)
         {
+            int countFindIndex = 0;
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] == value)
                 {
-                    Console.WriteLine($"Найдено совпадение с элементом {i + 1}");
+                    countFindIndex++;
                 }
             }
+
+            int index = 0;
+            int[] arrFindIndex = new int[countFindIndex];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == value)
+                {
+                    arrFindIndex[index] = i;
+                    index++;
+                }
+            }
+
+            return arrFindIndex;
         }
     }
 }
