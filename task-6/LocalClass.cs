@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 
 namespace LocalLogic
 {
     public class LocalClass
     {
-        public static int[] ArrayDoubling(int[] arr)
+        public static int[] ArrayDoublingNegativeDigit(int[] arr)
         {
             int count_negative = 0;
             for (int i = 0; i < arr.Length; i++)
@@ -20,15 +20,11 @@ namespace LocalLogic
             int index = 0;
             for (int i = 0; i < arr.Length; i++)
             {
+                arr_doubling[index] = arr[i];
                 if (arr[i] < 0)
                 {
-                    arr_doubling[index] = arr[i];
                     arr_doubling[index + 1] = arr[i];
                     index++;
-                }
-                else
-                {
-                    arr_doubling[index] = arr[i];
                 }
                 index++;                
             }
